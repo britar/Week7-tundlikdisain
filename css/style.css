@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(58, 47, 70);
+    color: rgb(219, 190, 155);
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.header h1 {
+    text-transform: uppercase;
+}
+
+.image-container {   
+    clip-path: circle(50% at 50% 50%);
+    background-image: url('../img/profile1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 450px;
+    margin: 2rem auto;  
+}
+
+.navigation ul li {
+    border: 2px solid rgb(133, 74, 128);
+    border-radius: 5px;
+    color: rgb(219, 190, 155);
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 16rem;
+    margin: 3rem 0;
+}
+
+.navigation ul li:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.main-container div {
+    margin-bottom: 2rem;
+}
+
+.main-container h1 {
+    margin-bottom: 5rem;
+}
+
+.main-container p {
+    text-align: justify;
+}
+
+.footer {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 2rem;
+}
+
+.footer ul a {
+    color: #777;
+    text-decoration: none;
+}
+
+
+@media (min-width: 480px) {
+    /*muuda image-container taustapilti*/
+    /*muuda dokumendi taustavärvi*/
+    /*muuda dokumendi tekstivärvi*/
+    /*ära unusta ka raamjoonesid*/
+
+    .container { 
+    width: 100%;  
+    }
+
+
+    .navigation ul li {
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    
+
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        background-color: rgb(42, 117, 117);
+        color: rgb(245, 163, 176);
+        width: 100%;
+    }
+
+    .navigation ul li { 
+        border: 2px solid rgb(59, 175, 175);
+        border-radius: 5px;
+        color: rgb(245, 163, 176);
+    } 
+        
+    .image-container {
+        background-image: url(../img/profile2.jpg);
+    }
+}
+    
+
+@media (min-width: 1024px){
+        
+    /*muuda image-container taustapilti*/
+    /*muuda dokumendi taustavärvi*/
+    /*muuda dokumendi tekstivärvi*/
+    /*ära unusta ka raamjoonesid*/
+    .container {
+        background-color: rgb(175, 77, 154);
+        color: rgb(119, 235, 115);
+        width: 100%;
+    }
+
+    .navigation ul li { 
+        border: 2px solid rgb(224, 146, 207);
+        border-radius: 5px;
+        color: rgb(119, 235, 115);
+    } 
+
+    .image-container {
+        background-image: url(../img/profile3.jpg);
+    }
+}
+
+
+@media (min-width: 1200px){
+
+    /*muuda image-container taustapilti*/
+    /*muuda dokumendi taustavärvi*/
+    /*muuda dokumendi tekstivärvi*/
+    /*ära unusta ka raamjoonesid*/
+
+    .image-container {
+        background-image: url(../img/profile4.jpg);
+    }
+
+    .header h1 {
+        margin: 3rem auto;
+    }
+    .navigation ul li {
+        border: 2px solid rgb(91, 93, 199);
+        border-radius: 5px;
+        color: rgb(213, 245, 72);
+        display: inline-block;
+        width: 16rem;
+    }
+    
+    .navigation ul li:not(:last-child) {
+        border-bottom: 1px solid black;
+        margin-right: 4rem;
+    }
+
+    .main-container {
+        width: 75%;
+    }
+
+    .container {
+        background-color: rgb(16, 17, 71);
+        color: rgb(213, 245, 72);
+        width: 100%;
+    }
+
+}
+
+
